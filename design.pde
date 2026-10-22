@@ -1,319 +1,530 @@
-//COLOURS
-// blue black 31, 25, 49
-// deep mid blue 33, 88, 142
-// purple shadow 72, 45, 103
-// warm mid green 75, 144, 38
-// yellow green 160, 185, 60
-
-
-void setup() {
-//background dimension + setup
-size(700, 850);
-background(180, 223, 245);
-fill(70, 31, 18);
-noStroke();
-rect(0, 600, 700, 350);
-
-  // sky gradient
-spotify (165, 215, 237, 0, 480, 700);
-spotify (165, 215, 237, 0, 450, 700);
-spotify (163, 212, 234, 0, 400, 700);
-spotify (152, 206, 232, 0, 350, 700);
-spotify (127, 186, 216, 0, 300, 700);
-spotify (138, 187, 224, 0, 250, 700);
-spotify (152, 196, 234, 0, 200, 700);
-spotify (152, 189, 234, 0, 150, 700);
-spotify (128, 173, 219, 0, 100, 700);
-spotify (107, 170, 203, 0, 50, 700);
-spotify (117, 160, 219, 0, 0, 700);
-
-
-// clouds
-spotify(240, 235, 235, 3, 400, 160);          // cloud white
-spotify(240, 235, 235, 150, 300, 160);          // cloud white
-spotify(240, 235, 235, 40, 250, 360);          // cloud white
-spotify(240, 235, 235, 380, 210, 160);          // cloud white
-spotify(240, 235, 235, 60, 200, 220);          // cloud white
-spotify(240, 235, 235, 20, 150, 190);          // cloud white
-spotify(240, 235, 235, 110, 100, 160);          // cloud white
-spotify(240, 235, 235, 135, 50, 70);          // cloud white
-spotify(240, 235, 235, 480, 130, 40);          // cloud white
-spotify(240, 235, 235, 550, 160, 50);          // cloud white
-spotify(240, 235, 235, 660, 350, 40);          // cloud white
-spotify(240, 235, 235, 630, 400, 85);          // cloud white
-spotify(240, 235, 235, 640, 450, 70);          // cloud white
-spotify(240, 235, 235, 650, 500, 60);          // cloud white
-spotify(240, 235, 235, 650, 550, 50);          // cloud white
-
-
-// Child
-  //hat top
-noStroke();
-fill(219, 205, 155);
-ellipseMode(CENTER);
-ellipse(160, 490, 32,25);
-
-
-  //hat brim
-stroke(206, 194, 148);
-fill(155, 150, 131);
-ellipseMode(CENTER);
-ellipse(160, 500, 42, 20);
-
-
-  //body
-stroke(237, 240, 172);
-fill(237, 240, 172);
-ellipseMode(CENTER);
-ellipse(164, 563, 50, 80);  
-
-stroke(109, 118, 142);
-fill(109, 118, 142);
-ellipseMode(CENTER);
-ellipse(156, 563, 50, 80);
+void setup(){
+  size(700, 850);
+  background(121, 52, 12);        // warm dark brown background
   
-stroke(103, 130, 173);
-fill(103, 130, 173);
-ellipseMode(CENTER);
-ellipse(160, 563, 50, 80);
+  
+    // Cool Greens
+// cool dark green (24, 84, 62)
+// cool mid green  (#18865D) (24, 134, 93)
+    
+    // Warm Greens
+// warm mid green(47, 116, 50)
+// warm light green (#66A543) (102, 165, 67)
+// warmer mid green (83, 126, 37)
+// warm light green hihglight (112, 167, 54)
 
 
-  // face
-noStroke();
-fill(198, 162, 140);
-ellipseMode(CENTER);
-ellipse(160, 509, 26, 32);
+// bridge green (#2BA275) (43, 162, 117)
+// bridge teal highlights (#62C1A5) (98, 193, 165)
+// background warm dark brown (#79340C) (121, 52, 12)
+
+  
+
+  // trees and grass
+  
+        //R    G   B   X  Y  Length 
+  spotify(12, 100, 58, 0, 0, 700);        // dark green
+  
+  spotify(28, 77, 43, 1, 25, 700);        // darker green
+  
+  spotify(28, 77, 43, 0, 75, 700);      // darker green
+  
+  spotify(28, 77, 43, 0, 170, 700);      // darker green
+  
+  spotify(12, 100, 58, 0, 125, 700);      // dark green
+  
+  spotify(12, 100, 58, 0, 220, 700);      // dark green
+  
+  spotify(28, 77, 43, 0, 270, 700);       // darker green
+  
+  spotify(12, 100, 58, 0, 320, 700);      // dark green
+  
+  spotify(28, 77, 43, 0, 370, 700);      // darker green
+  
+  spotify(12, 100, 58, 0, 410, 700);      // dark green
+  
+  spotify(28, 77, 43, 0, 450, 700);      // darker green
+  
+  spotify(12, 100, 58, 0, 490, 700);     // dark green
+  
+  spotify(12, 100, 58, 0, 540, 700);      // dark green
+  
+  spotify(24, 84, 62, 0, 800, 700);      // cool dark green
+  
+  spotify(83, 126, 37, 80, 515, 170);    // warmer mid green
+  
+  spotify(24, 84, 62, 40, 5, 50);        // cool dark green
+  
+  spotify(24, 84, 62, 130, 34, 18);        // cool dark green
+  
+  spotify(24, 84, 62, 5, 85, 170);        // cool dark green
+  
+  spotify(24, 84, 62, 310, 18, 120);        // cool dark green
+  
+  spotify(24, 84, 62, 48, 160, 80);        // cool dark green
+  
+  spotify(47, 116, 50, 420, -7, 80);      // warm mid green
+  
+  spotify(47, 116, 50, 390, 70, 80);      // warm mid green
+  
+  spotify(83, 126, 37, 400, 40, 70);        // warmer mid green
+  
+  spotify(47, 116, 50, 380, 140, 80);      // warm mid green
+  
+  spotify(47, 116, 50, 40, 40, 80);      // warm mid green
+  
+  spotify(47, 116, 50, 600, -5, 80);      // warm mid green
+  
+  spotify(24, 84, 62, 250, 73, 90);        // cool dark green
+  
+  spotify(24, 84, 62, 270, 125, 90);        // cool dark green
+  
+  spotify(24, 84, 62, 50, 240, 60);        // cool dark green
+  
+  spotify(24, 84, 62, 50, 430, 75);        // cool dark green
+  
+  spotify(24, 84, 62, 640, 250, 60);        // cool dark green
+  
+  spotify(24, 84, 62, 650, 190, 60);        // cool dark green
+  
+  spotify(24, 84, 62, 400, 170, 80);        // cool dark green
+  
+  spotify(24, 84, 62, 246, 320, 90);        // cool dark green
+  
+  spotify(24, 84, 62, 274, 260, 80);        // cool dark green
+  
+  spotify(90, 131, 119, 618, 10, 100);      // grey green (top right)
+  
+  spotify(90, 131, 119, 658, 90, 50);      // grey green (top right)
+  
+  spotify(90, 131, 119, 618, 50, 100);      // grey green (top right)
+  
+  spotify(90, 131, 119, 658, 140, 50);      // grey green (top right)
+  
+  spotify(90, 131, 119, 410, 130, 80);      // grey green (top middle)
+  
+  spotify(47, 116, 50, 180, 70, 75);      // warm mid green
+  
+  spotify(83, 126, 37, 210, 100, 70);      // warmer mid green
+  
+  spotify(83, 126, 37, 210, 100, 70);      // warmer mid green
+  
+  spotify(83, 126, 37, 160, 20, 50);      // warmer mid green
+  
+  spotify(83, 126, 36, 500, 100, 95);      // warmer mid green
+  
+  spotify(47, 116, 50, 500, 50, 70);      // warm mid green
+  
+  spotify(47, 116, 50, 600, 100, 70);      // warm mid green  
+  
+  spotify(47, 116, 50, 30, 210, 50);      // warm mid green
+  
+  spotify(47, 116, 50, 70, 130, 80);      // warm mid green
+  
+  spotify(83, 126, 37, 520, 180, 160);     // warmer mid green
+    
+  spotify(83, 126, 37, 0, 670, 700);     // warm light green
+  
+  spotify(83, 126, 37, 0, 760, 700);     // warm light green
+  
+  spotify(83, 126, 37, 545, 10, 80);        // warmer mid green
+  
+  spotify(0, 106, 85, 300, 400, 100);        // new cool green
+  
+  spotify(0, 106, 85, 0, 330, 200);        // new cool green
+  
+  spotify(47, 116, 50, 20, 295, 90);      // warm mid green
+  
+  spotify(8, 118, 59, 450, 450, 80);          // diff green
+  
+  spotify(178, 140, 43, 490, 330, 240);      // ochre 
+  
+  spotify(178, 140, 43, 510, 420, 180);      // ochre 
+  
+  spotify(178, 140, 43, 220, 410, 40);      // ochre 
+  
+  spotify(178, 140, 43, 640, 130, 40);      // ochre 
+  
+  spotify(178, 140, 43, 580, 0, 40);      // ochre 
+  
+  spotify(178, 140, 43, 190, 190, 60);      // ochre 
+  
+  spotify(178, 140, 43, 190, 120, 60);      // ochre 
+  
+  spotify(24, 84, 62, 30, 170, 60);        // cool dark green
+  
+  spotify(83, 126, 37, 240, 450, 80);      // warmer mid green
+  
+  spotify(83, 126, 37, 160, 140, 90);        // warmer mid green
+  
+  spotify(83, 126, 37, 140, 200, 80);        // warmer mid green
+  
+  spotify(83, 126, 37, 500, 400, 150);       // warmer mid green
+  
+  spotify(83, 126, 36, 200, 410, 60);      // warmer mid green
+  
+  spotify(83, 126, 36, 460, 340, 230);      // warmer mid green
+  
+  spotify(83, 126, 36, 540, 280, 120);      // warmer mid green
+  
+  spotify(83, 126, 36, 130, 275, 90);      // warmer mid green
+  
+  spotify(83, 126, 36, 185, 330, 90);      // warmer mid green
+  
+  spotify(102, 165, 67, 180, 70, 60);     // warm light green
+  
+  spotify(102, 165, 67, 220, 130, 40);     // warm light green
+  
+  spotify(102, 165, 67, 160, 180, 60);     // warm light green
+  
+  spotify(102, 165, 67, 380, 90, 90);     // warm light green
+  
+  spotify(102, 165, 67, 490, 60, 90);     // warm light green
+  
+  spotify(102, 165, 67, 540, -5, 80);     // warm light green
+  
+  spotify(102, 165, 67, 560, 120, 90);     // warm light green
+  
+  spotify(102, 165, 67, 180, 70, 60);     // warm light green
+  
+  spotify(102, 165, 67, 500, 300, 140);       // warm light green
+  
+  spotify(102, 165, 67, 580, 240, 40);       // warm light green
+  
+  spotify(102, 165, 67, 650, 145, 40);       // warm light green
+  
+  spotify(156, 206, 159, 540, 270, 40);      // highlights
+  
+  spotify(156, 206, 159, 435, 105, 45);     // highlights
+  
+  spotify(156, 206, 159, 510, 85, 65);     // highlights
+  
+  spotify(156, 206, 159, 600, 45, 30);      // highlights
+  
+  spotify(156, 206, 159, 565, 145, 50);        // highlights
+  
+  
+  
+  
+  // river reflection (400)
+  
+  spotify(24, 84, 62, 340, 460, 115);        // cool dark green
+  
+  spotify(24, 84, 62, 360, 530, 190);        // cool dark green (river reflection)
+  
+  spotify(24, 84, 62, 50, 540, 100);        // cool dark green (river reflection)
+  
+  spotify(24, 84, 62, 510, 570, 190);        // cool dark green (river reflection)
+  
+  spotify(24, 84, 62, 274, 260, 80);        // cool dark green (river reflection)
+  
+  spotify(24, 84, 62, 0, 620, 700);        // cool dark green (river reflection)
+  
+  spotify(24, 84, 62, 180, 470, 60);         // cool dark green
+  
+  spotify(47, 116, 50, 0, 590, 700);      // warm mid green
+  
+  spotify(0, 106, 85, 320, 590, 300);      // new cool green
+  
+  spotify(0, 106, 85, 0, 715, 700);       // new cool green
+  
+  spotify(24, 84, 62, 40, 570, 250);      // cool dark green
+  
+  // Bridge reflection
+noFill();
+stroke(90, 37, 16);
+strokeWeight(23);
+arc(350, 595, 890, 500, PI/5, PI-PI/5);    //warm darker brown
 
 
-// Umbrella
-oval(184, 214, 199, 240, 100, 220, 100, PI+3);    // umbrella circle highlight
-oval(46, 113, 88, 240, 125, 220, 115, PI+3);     // umbrella circle shadow
+noFill();
+stroke(27, 90, 70);
+strokeWeight(17);
+arc(350, 619, 890, 500, PI/5, PI-PI/5);    //dark green
+  
+  
+  
+  // Lilies R G B   X    Y   length width height
+  
+  
+  lily(121, 52, 12, 200, 470, 110, 25, 5);          // warm dark brown
+  
+  lily(121, 52, 12, 160, 490, 120, 25, 5);        //warm dark brown
+  
+  lily(121, 52, 12, 120, 500, 120, 25, 5);        //warm dark brown
+  
+  lily(121, 52, 12, 80, 520, 120, 25, 5);        // warm dark brown
+  
+  lily(121, 52, 12, 60, 540, 180, 30, 6);        //warm dark brown
+  
+  lily(121, 52, 12, 50, 560, 200, 30, 6);        //warm dark brown
+  
+  lily(121, 52, 12, 40, 600, 180, 30, 6);      // warm dark brown
+  
+  lily(121, 52, 12, 420, 560, 80, 30, 5);      // warm dark brown
+  
+  lily(121, 52, 12, 400, 480, 100, 30, 5);   // warm dark brown
+  
+  lily(121, 52, 12, 360, 650, 170, 30, 6);    // warm dark brown
+  
+  lily(121, 52, 12, 400, 700, 190, 35, 7);      // warm dark brown
+  
+  lily(121, 52, 12, 500, 730, 190, 35, 7);      // warm dark brown
+  
+  lily(121, 52, 12, 60, 740, 150, 35, 7);      // warm dark brown
+  
+  
+  lily(102, 165, 67, 0, 600, 100, 30, 6);        // warm light green
+  
+  
+  lily(167, 142, 188, 0, 650, 100, 30, 6);        // muted lilac
+  lily(167, 142, 188, 220, 650, 100, 30, 6);      // muted lilac
+  lily(167, 142, 188, 55, 550, 70, 25, 5);        // muted lilac
+  lily(167, 142, 188, 650, 650, 60, 35, 7);        // muted lilac
+  lily(167, 142, 188, 0, 815, 180, 55, 11);        // muted lilac
+  lily(167, 142, 188, 410, 840, 130, 55, 11);      // muted lilac
+ 
+ 
+ 
+  lily(81, 167, 119, 0, 660, 300, 32, 6);        // cool mid green
+  lily(81, 167, 119, 400, 650, 320, 32, 6);      // cool mid green
+  lily(81, 167, 119, 400, 670, 280, 32, 6);      // cool mid green
+  lily(81, 167, 119, 410, 695, 260, 35, 7);        // cool mid green
+  lily(81, 167, 119, 400, 730, 300, 35, 7);        // cool mid green
+  lily(81, 167, 119, 430, 750, 260, 35, 7);        // cool mid green
+  lily(81, 167, 119, 240, 715, 400, 35, 7);        // cool mid green
+  lily(81, 167, 119, 0, 720, 260, 35, 7);        // cool mid green
+  lily(81, 167, 119, 0, 735, 260, 35, 7);        // cool mid green
+  lily(81, 167, 119, 0, 795, 80, 40, 8);        // cool mid green
+  lily(81, 167, 119, 0, 820, 180, 55, 11);        // cool mid green
+  lily(81, 167, 119, 0, 840, 150, 55, 11);        // cool mid green
+  lily(81, 167, 119, 410, 840, 140, 55, 11);      // cool mid green
+  lily(81, 167, 119, 460, 780, 240, 45, 9);        // cool mid green
+  
+  
+  
+  lily(76, 164, 180, 240, 610, 150, 30, 6);      // dusty mid blue
+  
+  lily(76, 164, 180, 410, 580, 230, 30, 5);       // dusty mid blue
+  
+  lily(76, 164, 180, 580, 590, 80, 30, 5);        // dusty mid blue
+  
+  lily(76, 164, 180, 600, 680, 80, 30, 5);        // dusty mid blue
+  
+  lily(76, 164, 180, 320, 700, 100, 30, 5);        // dusty mid blue
+  
+  
+  
+  lily(127, 196, 181, 200, 470, 100, 25, 5);          // light teal
+  
+  lily(127, 196, 181, 160, 490, 120, 25, 5);        // light teal
+  
+  lily(127, 196, 181, 120, 500, 120, 25, 5);      // light teal
+  
+  lily(127, 196, 181, 80, 520, 120, 30, 6);      // light teal
+  
+  lily(127, 196, 181, 60, 540, 180, 30, 6);      //light teal
+  
+  lily(127, 196, 181, 50, 560, 200, 30, 6);       // light teal
+  
+  lily(127, 196, 181, 320, 485, 230, 25, 5);      // light teal
+  
+  lily(127, 196, 181, 335, 520, 210, 30, 5);      // light teal
+  
+  lily(127, 196, 181, 40, 600, 340, 30, 6);      // light teal
+  
+  lily(127, 196, 181, 360, 565, 310, 30, 5);      // light teal
+  
+  lily(127, 196, 181, 420, 580, 260, 30, 5);      // light teal
+  
+  lily(127, 196, 181, 480, 595, 190, 30, 5);      // light teal
+  
+  lily(127, 196, 181, 330, 650, 340, 30, 6);      // light teal
+  
+  lily(127, 196, 181, 150, 710, 100, 30, 5);      // light teal
+  
+  lily(127, 196, 181, 400, 750, 250, 35, 7);      // light teal
+  
+  lily(127, 196, 181, 50, 750, 200, 35, 7);        // light teal
+  
+  
+  
+  
+  lily(167, 142, 188, 145, 490, 70, 25, 5);      // muted lilac
+  
+  lily(167, 142, 188, 0, 610, 170, 27, 6);        // muted lilac
+  
+  lily(167, 142, 188, 380, 520, 240, 30, 5);      // muted lilac
+  
+  lily(167, 142, 188, 480, 580, 130, 25, 5);        // muted lilac
+  
+  lily(167, 142, 188, 480, 640, 50, 35, 7);        // muted lilac
+  
+  lily(167, 142, 188, 75, 738, 140, 30, 6);        // muted lilac
+  
+  lily(167, 142, 188, 430, 738, 80, 30, 6);        // muted lilac
+  
+  lily(167, 142, 188, 580, 738, 80, 30, 6);        // muted lilac
+  
+  
+  
+  lily(185, 179, 101, 30, 670, 80, 30, 6);          // light ochre
+  
+  lily(185, 179, 101, 150, 650, 80, 25, 6);          // light ochre
+  
+  lily(185, 179, 101, 430, 738, 50, 40, 8);          // light ochre
+  
+  lily(185, 179, 101, 525, 720, 50, 35, 7);          // light ochre
+  
+  lily(185, 179, 101, 650, 730, 50, 35, 7);          // light ochre
+  
+  
+   lily(81, 167, 119, 50, 555, 190, 30, 5);        // cool mid green
+  
+  
+  lily(186, 214, 199, 170, 495, 100, 25, 5);        // white green
+  
+  lily(186, 214, 199, 400, 475, 120, 30, 6);          // white green
+  
+  lily(186, 214, 199, 450, 520, 160, 25, 5);          // white green
+  
+  lily(186, 214, 199, 260, 600, 80, 25, 5);           // white green
+  
+  lily(186, 214, 199, 440, 580, 70, 25, 5);        // white green
+  
+  lily(186, 214, 199, 500, 560, 60, 25, 5);        // white green
+  
+  lily(186, 214, 199, 350, 570, 70, 25, 5);          // white green
+  
+  lily(186, 214, 199, 420, 658, 40, 40, 8);          // white green
+  
+  lily(186, 214, 199, 510, 640, 40, 40, 8);          // white green
+ 
+  lily(186, 214, 199, 530, 675, 40, 40, 8);          // white green
+  
+  lily(186, 214, 199, 440, 710, 40, 40, 8);          // white green
+  
+  lily(186, 214, 199, 320, 710, 55, 40, 8);          // white green
+  
+  lily(186, 214, 199, 210, 710, 40, 40, 8);          // white green
+  
+  lily(186, 214, 199, 140, 715, 25, 40, 8);          // white green
+  
+  lily(186, 214, 199, 60, 730, 40, 40, 8);          // white green
+  
+  
+  // Arc of river
+noFill();
+stroke(121, 52, 12);
+strokeWeight(3);
+arc(350, 740, 850, 580, -(PI-PI/5), -PI/5);  
 
+    // Bushes around the river
+// left side
+spotify(24, 84, 62, 50, 470, 60);        // cool dark green
+spotify(24, 134, 93, 10, 500, 60);      // cool mid green
+spotify(47, 116, 50, 105, 440, 70);      // warm mid green
+spotify(24, 134, 93, 170, 425, 60);      // cool mid green
 
-stroke(46, 113, 88);             // left umbrella
+// right side
+spotify(24, 134, 93, 460, 420, 100);      // cool mid green
+spotify(24, 134, 93, 580, 460, 90);       // cool mid green
+spotify(24, 134, 93, 620, 510, 90);       // cool mid green
+spotify(83, 126, 36, 618, 514, 90);       // warmer mid green
+spotify(83, 126, 36, 606, 464, 90);       // warmer mid green
+spotify(155, 206, 159, 378, 405, 80);     // highlights
+spotify(83, 126, 36, 380, 410, 80);       // warmer mid green
+ 
+  
+  //Bridge
+  
+//Top 2 bridge arc
+noFill();
+stroke(27, 90, 70);
+strokeWeight(16);
+arc(350, 470, 870, 500, -(PI-PI/5), -PI/5);    //dark green
+  
+noFill();
+stroke(64, 155, 125);
 strokeWeight(10);
+arc(350, 470, 870, 500, -(PI-PI/5), -PI/5);    //light green shade
+
+
 noFill();
-arc(120, 95, 65, 70, 0, HALF_PI); 
+stroke(93, 170, 145);
+strokeWeight(10);
+arc(350, 458, 910, 500, -(PI-PI/5), -PI/5);    // light green line 2
 
-stroke(46, 113, 88);             // second umbrella
-strokeWeight(11);
 noFill();
-arc(120, 170, 70, 80, -(HALF_PI), 0);     
+stroke(156, 196, 183);
+strokeWeight(3);
+arc(350, 454, 910, 500, -(PI-PI/5), -PI/5);    // highlight green
 
-stroke(46, 113, 88);             // third umbrella
-strokeWeight(11);
+//back lines of bridge 
+stroke(64, 155, 125);            //first line
+strokeWeight(10);
+line(4, 320, 4, 470);
+
+stroke(64, 155, 125);              //third line
+strokeWeight(10);
+line(390, 225, 390, 370);
+
+stroke(64, 155, 125);              //fourth line
+strokeWeight(10);
+line(550, 250, 550, 400);
+
+
+// bottom dark arc
+
 noFill();
-arc(200, 176, 85, 40, -PI, 0);    
+stroke(90, 37, 16);
+strokeWeight(23);
+arc(350, 640, 890, 500, -(PI-PI/5), -PI/5);    //warm darker brown
 
-
-stroke(46, 113, 88);             // fifth umbrella
-strokeWeight(11);
 noFill();
-arc(290, 169, 85, 50, -PI, -PI/4);  
+stroke(27, 90, 70);
+strokeWeight(17);
+arc(350, 639, 890, 500, -(PI-PI/5), -PI/5);    //dark green
 
-stroke(46, 113, 88);             // sixth umbrella
-strokeWeight(8);
+
+// bottom light arc
 noFill();
-arc(400, 150, 150, 130, -PI, -HALF_PI);  
-
-stroke(46, 113, 88);             // seventh umbrella
-strokeWeight(8);
-noFill();
-arc(400, 50, 80, 60, HALF_PI, PI);  
-
-stroke(46, 113, 88);             // eighth umbrella
+stroke(13, 70, 51);
 strokeWeight(15);
+arc(350, 621, 870, 500, -(PI-PI/5), -PI/5);    //darker green
+
 noFill();
-arc(372, 47, 45, 20, HALF_PI, PI);  
+stroke(93, 170, 145);
+strokeWeight(10);
+arc(350, 620, 870, 500, -(PI-PI/5), -PI/5);    // light green 
 
-stroke(46, 113, 88);             // ninth umbrella
-strokeWeight(12);
+
+// middle arc
 noFill();
-arc(305, 47, 80, 30, -(HALF_PI + QUARTER_PI), 0);  
+stroke(27, 90, 70);
+strokeWeight(16);
+arc(350, 545, 900, 500, -(PI-PI/5), -PI/5);    //dark green
 
-
-// umbrella fill
-noStroke();
-fill(46, 113, 88);
-quad(130, 130, 150, 110, 200, 150, 162, 165);
-
-noStroke();
-fill(46, 113, 88);
-quad(190, 140, 265, 145, 245, 170, 190, 150);
-
-noStroke();
-fill(46, 113, 88);
-triangle(290, 140, 330, 115, 320, 156);
-
-noStroke();
-fill(46, 113, 88);
-triangle(363, 70, 400, 85, 355, 95);
-
-
-//umbrella shadow lines
-
-stroke(95, 53, 113);        // left
-strokeWeight(8);
-line(257, 65, 155, 175);
-
-stroke(95, 53, 113);        // left 2
-strokeWeight(8);
-line(257, 65, 245, 175);
-
-stroke(95, 53, 113);        // right 1
-strokeWeight(8);
-line(257, 65, 325, 150);
-
-stroke(95, 53, 113);        // right 2
-strokeWeight(8);
-line(257, 65, 398, 84);
-
-
-stroke(157, 87, 46);        // umbrella stick
-strokeWeight(8);
-line(257, 65, 320, 290);
-
-
-// dress
-fill(100, 68, 41);              // brown layer
-noStroke();
-quad(320, 360, 420, 360, 400, 610, 240, 595);
-
-fill(103, 80, 67);              // brown layer
-noStroke();
-quad(310, 360, 420, 360, 400, 610, 220, 565);
-
-fill(154, 166, 209);            // main layer
-noStroke();
-quad(300, 330, 430, 330, 435, 600, 220, 540);
-
-fill(154, 166, 209);            // top petticoat
-noStroke();
-arc(365, 340, 170, 100, -PI, 0);   
-
-fill(154, 166, 209);            // second petticoat
-noStroke();
-arc(380, 380, 160, 100, -PI, PI/12);   
-
-fill(154, 166, 209);            // third petticoat
-noStroke();
-arc(410, 430, 100, 100, -PI, -(PI)/12);   
-
-
-fill(154, 166, 209);            // fourth petticoat
-noStroke();
-arc(410, 470, 100, 100, -PI, -(PI)/8);   
-
-fill(154, 166, 209);            // fifth layer
-noStroke();
-quad(400, 460, 445, 450, 465, 540, 400, 560);
-
-fill(154, 166, 209);            // sixth layer
-noStroke();
-triangle(430, 520, 470, 590, 420, 600);
-
-
-noStroke();
-oval(198, 162, 140, 273, 320, 25, 40, PI+3);      // hands
-
-fill(178, 133, 97);
-noStroke();
-quad(359, 170, 390, 150, 400, 220, 363, 220);        // neck
-
-oval(154, 166, 209, 410, 205, 100, 160, PI-3);      // torso
-
-oval(100, 68, 41, 348, 190, 70, 80, PI+3);        // hair
-oval(100, 68, 41, 375, 177, 50, 60, PI+3);        // hair bun  
-oval(198, 162, 140, 343, 198, 58, 78, PI+3);        // face
-
-noStroke();
-fill(67, 106, 180);           
-triangle(360, 190, 345, 230, 315, 235);            // necktie
-
-stroke(100, 68, 41);             // hair forehead
-strokeWeight(7);
 noFill();
-arc(410, 110, 100, 25, HALF_PI, PI); 
+stroke(64, 155, 125);
+strokeWeight(10);
+arc(350, 545, 900, 500, -(PI-PI/5), -PI/5);    // light green shade
+
+// front lines of bridge
+stroke(93, 170, 145);            //second line
+strokeWeight(10);
+line(150, 240, 150, 395);
+
+stroke(93, 170, 145);              //third line
+strokeWeight(10);
+line(405, 215, 405, 370);
+
+stroke(93, 170, 145);              //fourth line
+strokeWeight(10);
+line(590, 250, 590, 405);
 
 
 
 
-
-
-  // grass
-spotify(31, 25, 49, 190, 600, 190);       // blue black
-spotify(31, 25, 49, 220, 650, 185);      // blue black
-spotify(31, 25, 49, 160, 700, 200);      // blue black
-spotify(31, 25, 49, 150, 750, 230);    // blue black
-spotify(31, 25, 49, 10,585,170);      // blue black
-
-spotify(75, 144, 38, 0, 590, 200);      // warm mid green
-spotify(75, 144, 38, 0, 640, 230);     // warm mid green
-spotify(75, 144, 38, 0, 690, 200);     // warm mid green
-spotify(75, 144, 38, 0, 740, 200);      // warm mid green
-spotify(75, 144, 38, 0, 790, 155);      // warm mid green
-spotify(75, 144, 38, 0, 840, 120);      // warm mid green
-
-
-spotify(72, 45, 103, 40,660, 110);     // purple shadow
-
-spotify(1, 11, 21, 130, 800, 230);     // almost black
-spotify(1, 11, 21, 40, 680, 100);      // almost black
-spotify(1, 11, 21, 510, 625, 150);    // almost black
-
-spotify(72,45, 103, 260, 650, 110);      // purple shadow
-spotify(72, 45, 103, 210, 700,120);      // purple shadow
-spotify(72, 45, 103, 540, 610, 110);      // purple shadow
-spotify(72, 45, 103, 420,680, 110);      // purple shadow
-spotify(72, 45, 103, 400, 730, 110);      //purple shadow
-spotify(72, 45, 103, 370, 780, 120);      // purple shadow
-
-
-spotify(75, 144, 38, 350, 840, 420);     // warm mid green
-spotify(75, 144, 38, 355, 785, 410);     // warm mid green
-spotify(75, 144, 38, 375, 735, 350);     // warm mid green
-spotify(75, 144, 38, 355, 685, 360);      // warm mid green
-spotify(75, 144, 38, 385, 635, 150);      // warm mid green
-spotify(75, 144, 38, 640, 635, 70);      // warm mid green
-spotify(75, 144, 38, 640, 595, 70);      // warm mid green
-spotify(75, 144, 38, 375, 595, 170);     // warm mid green
-spotify(75, 144, 38, 545, 575, 95);      // warm mid green
-spotify(75, 144, 38, 630, 545, 30);      // warm mid green
-
-
-
-spotify(1, 11, 21, 530, 710, 120);     // almost black
-spotify(31, 25, 49, 550, 760, 135);      // blue black
-
-
-spotify(160, 185, 60, 20, 580, 30);      // yellow green
-spotify(160, 185, 60, 20, 540, 20);      // yellow green
-spotify(160, 185, 60, 100, 580, 30);      // yellow green
-spotify(160, 185, 60, 110, 530, 15);      // yellow green
-spotify(160, 185, 60, 170, 580, 30);      // yellow green
-spotify(160, 185, 60, 150, 620, 15);       // yellow green
-spotify(160, 185, 60, 120, 715, 30);      // yellow green
-spotify(160, 185, 60, 13, 740, 30);      // yellow green
-spotify(160, 185, 60, 28, 800, 65);      // yellow green
-spotify(160, 185, 60, 400, 580, 40);      // yellow green
-spotify(160, 185, 60, 370, 680, 90);      // yellow green
-spotify(160, 185, 60, 365, 790, 60);      // yellow green 
-spotify(160, 185, 60, 450, 770, 70);      // yellow green
-spotify(160, 185, 60, 480, 560, 40);      // yellow green
-spotify(160, 185, 60, 460, 610, 40);      // yellow green
-spotify(160, 185, 60, 590, 660, 100);      // yellow green
-spotify(160, 185, 60, 550, 560, 30);      // yellow green
-spotify(160, 185, 60, 550, 520, 15);      // yellow green
-
-
-stroke(168, 192, 224);             // sleeve
-strokeWeight(40);
-noFill();
-arc(340, 240, 110, 90, 0, HALF_PI);   
-
-
-//flowers ...
-
-
-
+  
 }
